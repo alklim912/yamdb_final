@@ -1,1 +1,1 @@
-!(https://github.com/alklim912/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![1](https://github.com/alklim912/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
