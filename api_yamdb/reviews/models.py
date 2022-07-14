@@ -1,13 +1,10 @@
-from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.validators import ASCIIUsernameValidator
 from django.core.validators import MinLengthValidator
+from django.db import models
 
-from .validators import (
-    check_score,
-    not_me_username_validation,
-    check_year_validation
-)
+from .validators import (check_score, check_year_validation,
+                         not_me_username_validation)
 from api_yamdb.settings import CODE_LENGTH, EMAIL_LENGTH, USERNAME_LENGTH
 
 

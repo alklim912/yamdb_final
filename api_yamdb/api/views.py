@@ -7,22 +7,18 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import status
 from rest_framework.exceptions import ValidationError
 from rest_framework.filters import OrderingFilter, SearchFilter
-from rest_framework.mixins import (
-    CreateModelMixin, DestroyModelMixin,
-    ListModelMixin
-)
+from rest_framework.mixins import (CreateModelMixin, DestroyModelMixin,
+                                   ListModelMixin)
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
 from rest_framework_simplejwt.tokens import AccessToken
 
-from . import permissions
-from . import serializers
+from . import permissions, serializers
 from .filters import TitleFilter
 from api_yamdb.settings import CODE_LENGTH
-from reviews.models import Category, Title, Genre, Review, User
-
+from reviews.models import Category, Genre, Review, Title, User
 
 EMAIL_SUBJECT = 'Код подтверждения для проекта YamDB'
 EMAIL_MESSAGE = '{}, Ваш код подтверждения: {}'

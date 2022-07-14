@@ -6,9 +6,8 @@ from rest_framework.fields import IntegerField
 
 from api_yamdb.settings import CODE_LENGTH, EMAIL_LENGTH, USERNAME_LENGTH
 from reviews import models
-from reviews.validators import (
-    check_year_validation, check_score,
-    not_me_username_validation)
+from reviews.validators import (check_score, check_year_validation,
+                                not_me_username_validation)
 
 
 class UsernameSerializer(serializers.Serializer):
